@@ -1,0 +1,17 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'PressStart2P-Regular', sans-serif;
+    --card-text-weight: 400;
+    --card-title-weight: 700;
+
+    --max-width: clamp(375px, 100vw, 700px);
+    --bg-image: url(../images/background.png);
+    --accent-color: #000000;
+    --accent-color-text: #fff;
+    --core-color: #000;
+    --animation-fill-color: red;
+    --main-body-color: none;
+    --sparks-color: red;
+    --contour-color: #000
+}
