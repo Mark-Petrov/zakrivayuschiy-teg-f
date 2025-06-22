@@ -1,1 +1,1 @@
-https://mark-petrov.github.io/zakrivayuschiy-teg-f/
+https://github.com/Mark-Petrov/zakrivayuschiy-teg-f
