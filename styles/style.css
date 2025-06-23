@@ -7,7 +7,6 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 */
 
 
@@ -60,7 +59,7 @@ body::before {
 .header__container{
   margin: 100px 0;
   inline-size: var(--max-width);
-  padding: 128px 120.5px;
+  padding: 128px 0;
   background-color: #fff;
   border: 2px solid #000;
   display: flex;
@@ -99,7 +98,6 @@ body::before {
   font-weight: 700;
   padding: 5px 24px 3px 10px;
   font-size: 18px;
-  /* block-size: 31px; */
   text-justify: center;
 }
 
@@ -110,7 +108,7 @@ body::before {
 } 
 
 .post__image{
-  inline-size: clamp(371px, 100vw, 696px);
+  inline-size: clamp(371px, 100%, 696px);
   block-size: clamp(371px, 100vw, 700px);
   position: relative;
   border-top: 2px solid var(--accent-color, #000);
@@ -218,29 +216,32 @@ body::before {
 .dialog__svg{
   width: 40px;
   height: 40px;
-  display: block
+  display: block;
+  margin-bottom: 2px;
+  margin-right: 2px;
 }
 
 .save__dialog{
-  inline-size: 353px;
   padding: 30px;
   font-family: var(--accent-font, sans-serif);
   text-transform: uppercase;
   font-size: 10px;
+  margin-top: auto;
+  opacity: 0.2;  
 }
 
 .dialog__container{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 17px;
+  margin-bottom: 28px;
   inline-size: 293px;
 }
 
 .dialog__container h2{
   inline-size: 234px;
-  line-height: 150%;
+  line-height: 145%;
 }
 
 .save__dialog button{
@@ -248,11 +249,11 @@ body::before {
   block-size: 38px;
   background-color: transparent;
   text-transform: uppercase;
-
+  font-size: 14px;
 }
 
 .save__dialog[open]::backdrop{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* Фильтры */
@@ -310,5 +311,28 @@ body::before {
     height: 28px;
     margin-top: 15px;
     align-self: center;
+  }
+
+  .blended-text {
+    top: 23px;
+    right: 11px;
+  }
+
+  .save__dialog{
+    margin-top: auto;
+    padding: 30px 22px;
+  }
+
+  .dialog__container{
+    gap: 10;
+  }
+
+  .dialog__svg{
+    margin-left: 19px;
+  }
+
+  .save__dialog button{
+    inline-size: 257px;
+    margin-left: 18px;
   }
 }
